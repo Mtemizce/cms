@@ -12,7 +12,7 @@
           <ul>
             <li class="dropdown">
               <a href="javascript:void(0)" class="dropdown-toggle usertitle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <small>Web Developer</small>
+                <small>Yazılım Geliştirici</small>
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu animated flipInY">
@@ -55,33 +55,41 @@
         <li>
           <a href="<?php echo base_url(); ?>">
             <i class="menu-icon zmdi zmdi-view-dashboard zmdi-hc-lg"></i>
-            <span class="menu-text">Panel Anasayfa</span>
-
+            <span class="menu-text">Başkan</span>
           </a>
         </li>
-<li class="has-submenu">
+        <li>
+          <a href="<?php echo base_url(); ?>">
+            <i class="menu-icon zmdi zmdi-view-dashboard zmdi-hc-lg"></i>
+            <span class="menu-text">Panel Anasayfa</span>
+          </a>
+        </li>
+        <li class="has-submenu">
           <a href="javascript:void(0)" class="submenu-toggle">
             <i class="menu-icon zmdi zmdi-puzzle-piece zmdi-hc-lg"></i>
             <span class="menu-text">Seçim Paneli</span>
             <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
           </a>
           <ul class="submenu">
-            <li><a href="buttons.html"><span class="menu-text">Oy Girişi</span></a></li>
-            <li><a href="alerts.html"><span class="menu-text">Anlık Durum Raporu</span></a></li>
+            <li><a href="#"><span class="menu-text">Oy Girişi Yap</span></a></li>
+            <li><a href="#"><span class="menu-text">Seçim Görevlileri</span></a></li>
+            <li><a href="#"><span class="menu-text">Sandık Başkanları</span></a></li>
+            <li><a href="#">
+              <span class="menu-text">Tutanaklar</span>
+              <span class="label label-danger menu-label">12</span></a>
+            </li>
           </ul>
         </li>
         <li class="has-submenu">
           <a href="javascript:void(0)" class="submenu-toggle">
             <i class="menu-icon zmdi zmdi-puzzle-piece zmdi-hc-lg"></i>
-            <span class="menu-text">Yönetim Kadrosu</span>
+            <span class="menu-text">Teşkilat</span>
             <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
           </a>
           <ul class="submenu">
-            <li><a href="buttons.html"><span class="menu-text">Seçim Görevlileri Listesi</span></a></li>
-            <li><a href="alerts.html"><span class="menu-text">Yeni Ekle</span></a></li>
-            <li><a href="panels.html"><span class="menu-text">Bölgeler</span></a></li>
-            <li><a href="lists.html"><span class="menu-text">Sandık Başkanları</span></a></li>
-            <li><a href="icons.html"><span class="menu-text">Tutanaklar</span></a></li>
+            <li><a href="#"><i class="menu-icon zmdi zmdi-view-dashboard zmdi-hc-lg"></i><span class="menu-text">Yönetim Kadrosu</span></a></li>
+            <li><a href="#"><i class="menu-icon zmdi zmdi-view-dashboard zmdi-hc-lg"></i><span class="menu-text">Meclis Üyeleri</span></a></li>
+            <li><a href="#"><i class="menu-icon zmdi zmdi-view-dashboard zmdi-hc-lg"></i><span class="menu-text">Teşkilat Görev Şeması</span></a></li>
           </ul>
         </li>
         <li class="has-submenu">
@@ -100,16 +108,22 @@
             <li><a href="compose.html"><span class="menu-text">Mail Yaz</span></a></li>
           </ul>
         </li>
-          <li>
+        <li>
           <a href="#">
             <i class="menu-icon zmdi zmdi-settings zmdi-hc-lg"></i>
             <span class="menu-text">Panel Ayarları</span>
           </a>
         </li>
+        <li>
+          <a href="#">
+            <i class="menu-icon zmdi zmdi-settings zmdi-hc-lg"></i>
+            <span class="menu-text">Kullanıcı Paneli</span>
+          </a>
+        </li>
         <li class="menu-separator"><hr></li>
 
         <li>
-          <a href="documentation.html">
+          <a href="#">
             <i class="menu-icon zmdi zmdi-power-off zmdi-hc-lg"></i>
             <span class="menu-text">Çıkış Yap</span>
           </a>

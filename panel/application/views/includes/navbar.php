@@ -65,7 +65,7 @@
               <div class="media">
                 <div class="media-left">
                   <div class="avatar avatar-xs avatar-circle">
-                    <img src="<?php echo base_url("resources"); ?>/assets/images/205.jpg" alt="">
+                    <img src="<?php echo base_url("resources"); ?>/assets/images/221.jpg" alt="">
                     <i class="status status-offline"></i>
                   </div>
                 </div>
@@ -80,7 +80,7 @@
               <div class="media">
                 <div class="media-left">
                   <div class="avatar avatar-xs avatar-circle">
-                    <img src="<?php echo base_url("resources"); ?>/assets/images/207.jpg" alt="">
+                    <img src="<?php echo base_url("resources"); ?>/assets/images/221.jpg" alt="">
                     <i class="status status-away"></i>
                   </div>
                 </div>
@@ -95,7 +95,7 @@
               <div class="media">
                 <div class="media-left">
                   <div class="avatar avatar-xs avatar-circle">
-                    <img src="<?php echo base_url("resources"); ?>/assets/images/211.jpg" alt="">
+                    <img src="<?php echo base_url("resources"); ?>/assets/images/221.jpg" alt="">
                     <i class="status status-away"></i>
                   </div>
                 </div>
@@ -107,17 +107,7 @@
             </a><!-- .media-group-item -->
           </div>
         </li>
-
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-hc-lg zmdi-settings"></i></a>
-          <ul class="dropdown-menu animated flipInY">
-            <li><a href="javascript:void(0)"><i class="zmdi m-r-md zmdi-hc-lg zmdi-account-box"></i>Profil</a></li>
-            <li><a href="javascript:void(0)"><i class="zmdi m-r-md zmdi-hc-lg zmdi-balance-wallet"></i>Balance</a></li>
-            <li><a href="javascript:void(0)"><i class="zmdi m-r-md zmdi-hc-lg zmdi-phone-msg"></i>Connection<span class="label label-primary">3</span></a></li>
-            <li><a href="javascript:void(0)"><i class="zmdi m-r-md zmdi-hc-lg zmdi-info"></i>privacy</a></li>
-          </ul>
-        </li>
-
+       
         <li class="dropdown">
           <a href="javascript:void(0)" class="side-panel-toggle" data-toggle="class" data-target="#side-panel" data-class="open" role="button"><i class="zmdi zmdi-hc-lg zmdi-apps"></i></a>
         </li>
