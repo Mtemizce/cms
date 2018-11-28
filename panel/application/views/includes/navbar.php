@@ -17,8 +17,8 @@
       <span class="zmdi zmdi-hc-lg zmdi-search"></span>
     </button>
 
-    <a href="../index.html" class="navbar-brand">
-      <span class="brand-icon"><i class="fa fa-gg"></i></span>
+    <a href="<?php echo base_url(); ?>" class="navbar-brand">
+      <span class="brand-icon"><img src="<?php echo base_url("resources/assets/images"); ?>/mhp_1.png" width="50" height="50" /></span>
       <span class="brand-name">MHP Hendek</span>
     </a>
   </div><!-- .navbar-header -->
