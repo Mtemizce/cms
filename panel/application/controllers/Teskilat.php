@@ -1,14 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Panel extends CI_Controller {
+class Teskilat extends CI_Controller {
 
 	public $viewFolder ="";
 
 	public function __construct ()
 	{
 		parent::__construct();
-		$this->viewFolder = "panel-dash-v";
+		$this->viewFolder = "teskilat-v";
 	}
 
 	public function index()
