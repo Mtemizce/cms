@@ -2,6 +2,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 <meta name="description" content="Admin, Dashboard, Bootstrap" />
-<link rel="shortcut icon" sizes="196x196" href="<?php echo base_url("resources"); ?>/assets/images/logo.png">
+<link rel="shortcut icon" sizes="196x196" href="<?php echo base_url("resources"); ?>/assets/images/mhp_1.png">
 <title>Seçim Sonuçları Ekranı | MHP Hendek İlçe Teşkilatı</title>
 <?php $this->load->view("includes/include-style"); ?>
