@@ -20,6 +20,6 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('panel-dash-v');
+		$this->load->view('panel-dash-v/panel-dash-v');
 	}
 }
