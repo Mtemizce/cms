@@ -58,7 +58,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="<?php echo base_url("secim"); ?>">
             <i class="menu-icon fa fa-area-chart zmdi-hc-lg"></i>
             <span class="menu-text">Anlık Seçim Raporu</span>
           </a>

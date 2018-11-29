@@ -17,7 +17,7 @@
     <main id="app-main" class="app-main">
       <div class="wrap">
     	<section class="app-content">
-    		<?php $this->load->view("teskilat-v/content"); ?>
+    		<?php $this->load->view("secim-durumu-v/content"); ?>
       </section><!-- #dash-content -->
       </div><!-- .wrap -->
     <!-- APP FOOTER -->
