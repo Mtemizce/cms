@@ -32,7 +32,7 @@
           </a>
         </li>
         <li>
-          <h5 class="page-title hidden-menubar-top hidden-float">MHP SeçSis Paneli</h5>
+          <h5 class="page-title hidden-menubar-top hidden-float">MHP Hendek Yerel Seçim Bilgi Paneli</h5>
         </li>
       </ul>
 

@@ -51,7 +51,7 @@
   <div class="menubar-scroll">
     <div class="menubar-scroll-inner">
       <ul class="app-menu">
-        <li>
+        <li class="active">
           <a href="<?php echo base_url(); ?>">
             <i class="menu-icon zmdi zmdi-home zmdi-hc-lg"></i>
             <span class="menu-text">Panel Anasayfa</span>
@@ -70,7 +70,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="<?php echo base_url("GorevliList"); ?>">
             <i class="menu-icon fa fa-users zmdi-hc-lg"></i>
             <span class="menu-text"> Seçim Görevlileri</span>
           </a>
