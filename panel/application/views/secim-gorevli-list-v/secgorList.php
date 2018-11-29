@@ -140,6 +140,6 @@
 				</tr>
 			</tbody>
 		</table>
-		<button type="button" class="btn btn-xs btn-success"><i class="fa fa-envelope"></i> Görevli Ekle</button>
+		<a href="<?php echo base_url("GorevliList/gorevliEkle"); ?>" type="button" class="btn btn-xs btn-success"><i class="fa fa-envelope"></i> Görevli Ekle</a>
 	</div>
 </div><!-- .widget-body -->

@@ -15,5 +15,9 @@ class GorevliList extends CI_Controller {
 	{
 		$this->load->view("{$this->viewFolder}/index");
 	}
+	public function gorevliEkle()
+	{
+		$this->load->view("{$this->viewFolder}/gorevliEkle");
+	}
 
 }
