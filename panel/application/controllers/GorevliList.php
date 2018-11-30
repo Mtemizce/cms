@@ -8,16 +8,23 @@ class GorevliList extends CI_Controller {
 	public function __construct ()
 	{
 		parent::__construct();
-		$this->viewFolder = "secim-gorevli-list-v";
+		$this->viewFolder = "secim-gorevli-v";
 	}
 
 	public function index()
 	{
-		$this->load->view("{$this->viewFolder}/index");
+		$viewData = new stdClass();
+		$viewData->viewFolder = $this->viewFolder;
+		$viewData->subViewFolder = "List";
+		
+		$this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
 	}
 	public function gorevliEkle()
 	{
-		$this->load->view("{$this->viewFolder}/gorevliEkle");
+		$viewData = new stdClass();
+		$viewData->viewFolder = $this->viewFolder;
+		$viewData->subViewFolder = "Add";
+		$this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
 	}
 
 }

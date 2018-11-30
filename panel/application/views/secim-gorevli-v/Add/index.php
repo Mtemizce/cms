@@ -16,10 +16,8 @@
   <!-- APP MAIN ==========-->
   <main id="app-main" class="app-main">
     <div class="wrap">
-      <section class="app-content">
-        <div class="row">
-        <?php $this->load->view("secim-gorevli-list-v/gorevliEkle-content"); ?>
-      </div>
+    	<section class="app-content">
+    		<?php $this->load->view("{$viewFolder}/{$subViewFolder}/content"); ?>
       </section><!-- #dash-content -->
     </div><!-- .wrap -->
     <!-- APP FOOTER -->
