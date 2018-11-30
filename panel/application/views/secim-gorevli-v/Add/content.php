@@ -1,3 +1,4 @@
+<div class="row">
 <div class="col-md-12">
 	<div class="widget">
 		<header class="widget-header">
@@ -18,11 +19,7 @@
 						<select id="select2-demo-1" class="form-control" data-plugin="select2">
 							<option value="option1">Mehmet Temizce</option>
 							<option value="option2">Sıtkı Yaz</option>
-							<option value="option3">Süleyman Kalk</option>
-							<option value="option4">Ahmet İnan</option>
-							<option value="option5">Serkan Şenler</option>
-							<option value="option5">Efe Oğuzhan Keleş</option>
-							<option value="option5">Gökhan Emre Uzun</option>
+							
 						</select>
 					</div><!-- END column -->
 				</div><!-- .form-group -->
@@ -67,3 +64,5 @@
 		</div><!-- .widget-body -->
 	</div><!-- .widget -->
 </div><!-- END column -->
+	
+</div>
