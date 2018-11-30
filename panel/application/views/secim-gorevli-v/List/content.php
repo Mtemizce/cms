@@ -2,7 +2,7 @@
   <div class="col-md-12">
     <div class="widget widget-pie-chart">
       <header class="widget-header">
-        <div class="col-md-10">
+        <div class="col-md-10 clearfix">
           <h4 class="widget-title">Seçim için görevli listesi. İster arama kutusundan isterseniz tablo başındaki filtreleri kullanarak görevli ve yerleri hakkında detaylı bilgiyi inceleyebilirsiniz.</h4>
         </div>
         <div class="col-md-2 text-right">
@@ -42,7 +42,7 @@
                 <td><a href="#" class="btn btn-danger btn-xs btn-outline"><i class="fa fa-envelope"></i> Sil</a>
                   <a href="#" class="btn btn-info btn-xs btn-outline"><i class="fa fa-edit"></i> Düzenle</a></td>
               </tr>
-              <tr>
+             <!-- <tr>
                 <td>Serkan Şenler</td>
                 <td>Köyler</td>
                 <td>Akova Mah.</td>
@@ -181,13 +181,11 @@
                   <a href="#" class="btn btn-danger btn-xs btn-outline"><i class="fa fa-envelope"></i> Sil</a>
                   <a href="#" class="btn btn-info btn-xs btn-outline"><i class="fa fa-edit"></i> Düzenle</a>
                 </td>
-              </tr>
+              </tr>-->
             </tbody>
           </table>
         </div>
-      </div><!-- .widget-body -->
-
-      
+      </div><!-- .widget-body --> 
     </div>
   </div>
 </div><!-- .row -->
