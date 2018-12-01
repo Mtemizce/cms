@@ -15,6 +15,16 @@
       <hr class="widget-separator">
       <div class="widget-body">
         <div class="table-responsive">
+          <table>
+            <tr>
+              <td>başlık 1</td>
+              <td>başlık 2</td>
+            </tr>
+            <tr>
+              <td>başlık 1-1</td>
+              <td><a href="#" class="btn btn-danger btn-outine btn-xs">deneme</a></td>
+            </tr>
+          </table>
           <table id="default-datatable" data-plugin="DataTable" class="table table-striped table-hover " cellspacing="0" width="100%">
             <thead>
               <tr>
@@ -27,9 +37,24 @@
                 <th>T.C. No</th>
                 <th>Sıra</th>
                 <th>İşlem</th>
+              </tr>   </thead>
+              <tbody>
+              <tr>
+                <td>Mehmet Temizce</td>
+                <td>Merkez</td>
+                <td>Kemaliye Mah.</td>
+                <td>Hendek Anadolu Lisesi</td>
+                <td>3</td>
+                <td>+90 545 544 90 88</td>
+                <td>279********</td>
+                <td>Asil</td>
+               <td class="clearfix"> 
+                  <a class="btn btn-danger btn-outline btn-xs" >deneme</a>
+               </td>
               </tr>
-            </thead>
-            <tbody>
+            </tbody>
+         
+           <!--   <tbody>
               <tr>
                 <td>Mehmet Temizce</td>
                 <td>Merkez</td>
@@ -42,7 +67,7 @@
                 <td><a href="#" class="btn btn-danger btn-xs btn-outline"><i class="fa fa-envelope"></i> Sil</a>
                   <a href="#" class="btn btn-info btn-xs btn-outline"><i class="fa fa-edit"></i> Düzenle</a></td>
               </tr>
-             <!-- <tr>
+            <tr>
                 <td>Serkan Şenler</td>
                 <td>Köyler</td>
                 <td>Akova Mah.</td>
@@ -181,8 +206,8 @@
                   <a href="#" class="btn btn-danger btn-xs btn-outline"><i class="fa fa-envelope"></i> Sil</a>
                   <a href="#" class="btn btn-info btn-xs btn-outline"><i class="fa fa-edit"></i> Düzenle</a>
                 </td>
-              </tr>-->
-            </tbody>
+              </tr>
+            </tbody>-->
           </table>
         </div>
       </div><!-- .widget-body --> 
