@@ -10,6 +10,7 @@ class GorevliList extends CI_Controller {
 		parent::__construct();
 		$this->viewFolder = "secim-gorevli-v";
 		$this->load->model("mahalle_model");
+		
 	}
 
 	public function index()
@@ -26,8 +27,11 @@ class GorevliList extends CI_Controller {
 	public function gorevliEkle()
 	{
 		$viewData = new stdClass();
+
+		$mahname = $this->mahalle_model->get_mahalle();
 		$viewData->viewFolder = $this->viewFolder;
 		$viewData->subViewFolder = "Add";
+		$viewData->mahname = $mahname;
 		$this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
 	}
 

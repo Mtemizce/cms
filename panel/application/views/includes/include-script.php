@@ -9,7 +9,7 @@
 <!-- endbuild -->
 
 
-<script src="<?php echo base_url("resources"); ?>/assets/js/library.js"></script>
+<?php $this->load->view("includes/library");?>
 <script src="<?php echo base_url("resources"); ?>/assets/js/plugins.js"></script>
 <script src="<?php echo base_url("resources"); ?>/assets/js/app.js"></script>
 <!-- endbuild -->

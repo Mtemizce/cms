@@ -13,11 +13,6 @@
                     </select>
                 </form>
             </div>
-            <script type="text/javascript">
-               
-            var
-
-            </script>
             <div data-plugin="plot" data-options="
             [
                 { label: 'MHP', data: 51.74, color: '#436eee' },
