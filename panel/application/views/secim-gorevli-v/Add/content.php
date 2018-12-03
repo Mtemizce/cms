@@ -14,24 +14,24 @@
           </div>
               </small>
             </div>
-            <form>
+            <form action="<?php echo base_url("gorevliList/kaydet"); ?>" method="post">
               <div class="row">
                 <div class="col-lg-4">
                   <div class="form-group" >
                     <label for="isim">İsim</label>
-                    <input type="text" class="form-control" id="isim" placeholder="isim" required>
+                    <input type="text" class="form-control" id="isim" placeholder="isim" >
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="form-group" >
                     <label for="soyisim">Soyisim</label>
-                    <input type="text" class="form-control" id="soyisim" placeholder="soyisim" required>
+                    <input type="text" class="form-control" id="soyisim" placeholder="soyisim" >
                   </div>
                 </div> 
                 <div class="col-lg-4">
                   <div class="form-group" >
                     <label for="tcno">T.C. Kimlik No</label>
-                    <input type="text" class="form-control" id="tcno" placeholder="tc no girin" required>
+                    <input type="text" class="form-control" id="tcno" placeholder="tc no girin" >
                   </div>
                 </div> 
               </div><!--İlk Satır -->
@@ -39,7 +39,7 @@
                 <div class="col-lg-4">
                   <div class="form-group">
                     <label for="cepno">Cep No</label>
-                    <input type="text" class="form-control"  placeholder="cepno" required >
+                    <input type="text" class="form-control"  placeholder="cepno"  >
                   </div>
                 </div>
                 <div class="col-lg-4">
@@ -56,11 +56,9 @@
                 <div class="col-lg-4">
                   <div class="form-group">
                     <label for="cepno">Bölge</label>
-                     <select  class="form-control">
-                     <!--<?php foreach ($mahname as $mahn) {?>
-                      <option><?php echo $mahn->mahalle_name;?></option>
-                    <?php }?>  -->
-                   </select>
+                     <input  class="form-control" readonly value="">
+                      
+                 
                   </div>
                   <div class="row">
                     <div class="col-lg-4">

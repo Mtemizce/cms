@@ -34,5 +34,7 @@ class GorevliList extends CI_Controller {
 		$viewData->mahname = $mahname;
 		$this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
 	}
-
+	public function Kaydet() {
+		echo "başarılı";
+	}
 }
