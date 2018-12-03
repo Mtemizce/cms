@@ -9,14 +9,18 @@ class GorevliList extends CI_Controller {
 	{
 		parent::__construct();
 		$this->viewFolder = "secim-gorevli-v";
+		$this->load->model("mahalle_model");
 	}
 
 	public function index()
 	{
 		$viewData = new stdClass();
+				
+		$gorevli = $this->mahalle_model->get_all();
 		$viewData->viewFolder = $this->viewFolder;
 		$viewData->subViewFolder = "List";
-		
+		$viewData->gorevli = $gorevli;
+
 		$this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
 	}
 	public function gorevliEkle()
