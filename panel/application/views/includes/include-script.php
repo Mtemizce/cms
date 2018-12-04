@@ -12,6 +12,7 @@
 <?php $this->load->view("includes/library");?>
 <script src="<?php echo base_url("resources"); ?>/assets/js/plugins.js"></script>
 <script src="<?php echo base_url("resources"); ?>/assets/js/app.js"></script>
+<script src="<?php echo base_url("resources"); ?>/assets/js/custom.js"></script>
 <!-- endbuild -->
 <script src="<?php echo base_url("resources"); ?>/libs/bower/moment/moment.js"></script>
 <script src="<?php echo base_url("resources"); ?>/libs/bower/fullcalendar/dist/fullcalendar.min.js"></script>

@@ -35,13 +35,48 @@ class GorevliList extends CI_Controller {
 		$this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
 	}
 	public function Kaydet() {
-		$this->mahalle_model->add(
-
+		$insert = $this->mahalle_model->add(
 			array(
-				"" =>$this->input->post(""),
+				"isim" 			=> $this->input->post("isim"),
+				"soyisim" 		=> $this->input->post("soyisim"),
+				//"mahalle" 	=>$this->input->post("mahalle_id"),
+				"tel_no" 		=> $this->input->post("cepno"),
+				"tc_no" 		=> $this->input->post("tcno"),
+				"bolge" 		=> $this->input->post("bolge"),
+				"gorev" 		=> $this->input->post("gorev"),
+				"durum" 		=> $this->input->post("durum"),
+				"sandik_no" 	=> $this->input->post("sandikno"),
+				"adres" 		=> $this->input->post("sandikadres")
+
+			));
+			if($insert){
+				redirect(base_url("GorevliList"));
+			}else {
+				redirect(base_url("GorevliList/gorevliEkle"));
+			}
+	}
+	public function Duzenle($id){
+		
+		$viewData = new stdClass();
+
+		/*-- Alakalı Veriyi çekme --*/
+		$gorevli = $this->mahalle_model->get(
+			array(
+				"id"	=> $id
 
 			)
-
 		);
+		
+		$viewData->viewFolder = $this->viewFolder;
+		$viewData->subViewFolder = "Update";
+		$viewData->gorevli = $gorevli;
+		
+		$this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
+
+
+
+
+
+
 	}
 }

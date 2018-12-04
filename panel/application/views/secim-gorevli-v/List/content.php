@@ -19,6 +19,7 @@
             <th>#ID</th>
             <th>İsim</th>
             <th>Soyisim</th>
+            <th>Görev</th>
             <th>Bölge</th>
             <th>Mahalle</th>
             <th>Sandık Adrs.</th>
@@ -37,6 +38,7 @@
         <th>#ID</th>
         <th>İsim</th>
         <th>Soyisim</th>
+        <th>Görev</th>
         <th>Bölge</th>
         <th>Mahalle</th>
         <th>Sandık Adrs.</th>

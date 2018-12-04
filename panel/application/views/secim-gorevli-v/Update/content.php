@@ -14,21 +14,21 @@
       <form action="<?php echo base_url("gorevliList/kaydet"); ?>" method="post">
         <div class="row">
         <div class="col-lg-4">
-          <div class="form-group has-info">
-            <label for="isim" class="control-label">İsim</label>
-            <input type="text" class="form-control" id="isim" placeholder="İsim..." name="isim" required>
+          <div class="form-group">
+            <label for="isim">İsim</label>
+            <input type="text" class="form-control"  placeholder="isim" name="isim" value="<?php echo $gorevli->isim; ?>">
           </div>
         </div>
         <div class="col-lg-4">
           <div class="form-group" >
             <label for="soyisim">Soyisim</label>
-            <input type="text" class="form-control" id="soyisim" placeholder="Soyisim..." name="soyisim" required>
+            <input type="text" class="form-control" name="soyisim" placeholder="soyisim" value="<?php echo $gorevli->soyisim; ?>">
           </div>
         </div> 
         <div class="col-lg-4">
           <div class="form-group">
-            <label>Mahalle</label>
-            <select class="form-control" name="mahalle">
+            <label for="cepno">Mahalle</label>
+            <select  class="form-control" name="mahalle">
               <?php foreach ($mahname as $mahn) {?>
               <option><?php echo $mahn->mahalle_name;?></option>
               <?php }?>  
@@ -40,13 +40,13 @@
         <div class="col-lg-4">
           <div class="form-group">
             <label for="cepno">Cep No</label>
-            <input type="number" class="form-control" id="cepno" placeholder="İletişim Numarası..." name="cepno" required>
+            <input type="text" class="form-control" placeholder="cepno" name="cepno"  value="<?php echo $gorevli->tel_no; ?>">
           </div>
         </div>
         <div class="col-lg-4">
           <div class="form-group" >
            <label for="tcno">T.C. Kimlik No</label>
-           <input type="number" class="form-control" id="tcno" name="tcno" placeholder="T.C Kimlik Numarası..." required>
+           <input type="text" class="form-control" name="tcno" placeholder="tc no girin"  value="<?php echo $gorevli->tc_no; ?>">
           </div>
         </div>
         <div class="col-lg-4"><!-- Bölge-->
@@ -81,23 +81,22 @@
         </div><!-- / Durum -->
          <div class="col-lg-4">
           <div class="form-group" >
-           <label for="sandikno">Sandık No</label>
-           <input type="number" id="sandikno" class="form-control has-feedback" name="sandikno" placeholder="Sandık Numarası..." required>
+           <label for="tcno">Sandık No</label>
+           <input type="text" class="form-control" name="sandikno" placeholder="Sandık No"  value="<?php echo $gorevli->sandik_no; ?>">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
         <div class="form-group">
-          <label for="adres">Adres</label>
-          <textarea class="form-control" id="adres" placeholder="Görev yapılacak yerin adresi..." name="sandikadres" required></textarea>
+          <textarea class="form-control" placeholder="Görev yapılacak yerin adresi..." name="sandikadres" required><?php echo $gorevli->adres; ?></textarea>
         </div>
       </div>
       </div>
         <div class="row">
         <div class="col-lg-12 text-center">
-          <a href="<?php echo base_url("GorevliList") ?>" class="btn btn-danger btn-md"><i class="fa fa-reply"></i> Geri dön</a>
-          <button type="submit" class="btn btn-success btn-md"><i class="fa fa-plus"></i> Yeni Görevli Ekle</button>
+          <a href="<?php echo base_url("GorevliList") ?>" class="btn btn-danger btn-md"><i class="fa fa-reply"></i> İptal</a>
+          <button type="submit" class="btn btn-success btn-md"><i class="fa fa-cloud-upload"></i> Güncelle</button>
         </div>
         </div>
       </form>
