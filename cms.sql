@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 04 Ara 2018, 13:00:55
+-- Üretim Zamanı: 04 Ara 2018, 13:03:09
 -- Sunucu sürümü: 5.7.21
 -- PHP Sürümü: 7.1.16
 
@@ -21,6 +21,36 @@ SET time_zone = "+00:00";
 --
 -- Veritabanı: `cms`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `mahalleler`
+--
+
+DROP TABLE IF EXISTS `mahalleler`;
+CREATE TABLE IF NOT EXISTS `mahalleler` (
+  `mahalle_id` int(11) NOT NULL AUTO_INCREMENT,
+  `mahalle_name` varchar(30) COLLATE utf8_turkish_ci NOT NULL,
+  `bolge` varchar(10) COLLATE utf8_turkish_ci NOT NULL,
+  PRIMARY KEY (`mahalle_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+
+--
+-- Tablo döküm verisi `mahalleler`
+--
+
+INSERT INTO `mahalleler` (`mahalle_id`, `mahalle_name`, `bolge`) VALUES
+(1, 'Kemaliye', 'Merkez'),
+(2, 'İkbaliye', 'Köyler'),
+(3, 'Sivritepe', 'Köyler'),
+(4, 'Çamlıca', 'Köyler'),
+(5, 'Kahraman', 'Köyler'),
+(6, 'Dereboğazı', 'Merkez'),
+(7, 'Pınarlı', 'Köyler'),
+(8, 'Çağlayan', 'Köyler'),
+(9, 'Yeni Mah.', 'Merkez'),
+(10, 'Akova', 'Köyler');
 
 -- --------------------------------------------------------
 
@@ -65,6 +95,53 @@ INSERT INTO `mahalle_gorevli` (`id`, `isim`, `soyisim`, `tel_no`, `tc_no`, `maha
 (13, 'Emre', 'Malçok', '5555555555', 55555555555, 0, 'deneme adres', 22, 'Merkez', 'Asil', 'Sandık Görevlisi', NULL),
 (14, 'Halil Hakan', 'Oturak', '5555555565', 54658695847, 0, 'deneme adres', 12, 'Merkez', 'Asil', 'Sandık Görevlisi', NULL),
 (15, '11', '1', '1', 1, 0, '1', 1, 'Merkez', 'Asil', 'Sandık Görevlisi', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `usergroup`
+--
+
+DROP TABLE IF EXISTS `usergroup`;
+CREATE TABLE IF NOT EXISTS `usergroup` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_id` int(11) NOT NULL,
+  `group_name` varchar(30) COLLATE utf8_turkish_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+
+--
+-- Tablo döküm verisi `usergroup`
+--
+
+INSERT INTO `usergroup` (`id`, `group_id`, `group_name`) VALUES
+(1, 1, 'Administrator'),
+(2, 2, 'Poll Master');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE utf8_turkish_ci NOT NULL,
+  `email` varchar(60) COLLATE utf8_turkish_ci NOT NULL,
+  `yetki` tinyint(1) NOT NULL,
+  `username` varchar(30) COLLATE utf8_turkish_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+
+--
+-- Tablo döküm verisi `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `yetki`, `username`) VALUES
+(1, 'Mehmet Temizce', 'mehmettemizce@hotmail.com.tr', 1, 'mtemizce'),
+(2, 'Mert Temizce', 'mert.temizce@hotmail.com.tr', 1, 'mrtemizce'),
+(3, 'Tarık Temizce', 'tarik.temizce@hotmail.com.tr', 1, 'ttemizce');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
