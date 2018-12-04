@@ -20,4 +20,7 @@ public function get_mahalle() {
 	public function get_all() {
 		return $this->db->get($this->tableName)->result();
 	}
+	public function add($data = array()){
+		return $this->db->insert($this->tableName, $data);
+	}
 }

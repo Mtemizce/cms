@@ -35,6 +35,13 @@ class GorevliList extends CI_Controller {
 		$this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
 	}
 	public function Kaydet() {
-		echo "başarılı";
+		$this->mahalle_model->add(
+
+			array(
+				"" =>$this->input->post(""),
+
+			)
+
+		);
 	}
 }
