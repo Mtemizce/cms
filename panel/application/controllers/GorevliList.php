@@ -72,11 +72,33 @@ class GorevliList extends CI_Controller {
 		$viewData->gorevli = $gorevli;
 		
 		$this->load->view("{$viewData->viewFolder}/{$viewData->subViewFolder}/index", $viewData);
-
-
-
-
-
-
 	}
+	public function Guncelle($id) {
+		$guncellen = $this->mahalle_model->update(
+			array (
+				"id"	=> $id
+
+			),
+			array(
+				"isim" 			=> $this->input->post("isim"),
+				"soyisim" 		=> $this->input->post("soyisim"),
+				//"mahalle" 	=>$this->input->post("mahalle_id"),
+				"tel_no" 		=> $this->input->post("cepno"),
+				"tc_no" 		=> $this->input->post("tcno"),
+				"bolge" 		=> $this->input->post("bolge"),
+				"gorev" 		=> $this->input->post("gorev"),
+				"durum" 		=> $this->input->post("durum"),
+				"sandik_no" 	=> $this->input->post("sandikno"),
+				"adres" 		=> $this->input->post("sandikadres")
+
+			));
+			if($guncellen){
+				redirect(base_url("GorevliList"));
+			}else {
+				redirect(base_url("GorevliList/duzenle"));
+			}
+	}
+
+
+
 }

@@ -11,7 +11,7 @@
           </div>
         </small>
       </div>
-      <form action="<?php echo base_url("gorevliList/kaydet"); ?>" method="post">
+      <form action="<?php echo base_url("gorevliList/update/$this->id"); ?>" method="post">
         <div class="row">
         <div class="col-lg-4">
           <div class="form-group">
